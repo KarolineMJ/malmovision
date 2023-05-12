@@ -7,7 +7,7 @@ export const getRandomNumbers = () => {
   var array = [] as number[]
 
   while (array.length < guessNumber) {
-    var r = Math.floor(Math.random() * BingoText.length) + 1
+    var r = Math.floor(Math.random() * BingoText.length) - 1
     if (array.indexOf(r) === -1) array.push(r)
   }
   window.localStorage.setItem(RANDOM_NUMBERS, JSON.stringify(array))
