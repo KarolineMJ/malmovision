@@ -79,7 +79,7 @@ const Bingo = () => {
                       flexGrow: 1,
                       alignItems: 'center',
                       justifyContent: 'center',
-                      padding: '10px',
+                      padding: '4px',
                       backgroundColor: '#F2F2F2b3',
                       height: '100%',
                       display: 'flex',

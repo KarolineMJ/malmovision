@@ -1,6 +1,6 @@
 import { BingoText } from '../data/bingeData'
 
-const guessNumber = 24
+const guessNumber = 20
 export const getRandomNumbers = () => {
   var array = [] as number[]
 
