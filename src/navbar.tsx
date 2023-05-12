@@ -36,12 +36,12 @@ const Navbar = () => {
           <Link to="/bingo" className={classes.link}>
             Bingo
           </Link>
-          <Link to="/quiz" className={classes.link}>
+          {/* <Link to="/quiz" className={classes.link}>
             Quiz
           </Link>
           <Link to="/faq" className={classes.link}>
             FAQ
-          </Link>
+          </Link> */}
         </div>
       </Toolbar>
     </AppBar>

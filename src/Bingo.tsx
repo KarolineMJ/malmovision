@@ -1,4 +1,9 @@
-import { Checkbox, FormControlLabel, FormGroup } from '@mui/material'
+import {
+  Checkbox,
+  FormControlLabel,
+  FormGroup,
+  Typography,
+} from '@mui/material'
 import { makeStyles } from '@material-ui/core'
 import CircleCheckedFilled from '@material-ui/icons/CheckCircle'
 import CircleUnchecked from '@material-ui/icons/RadioButtonUnchecked'
@@ -7,6 +12,7 @@ import { getRandomItem } from './functions/getRandomNumbers'
 import { BingoText } from './data/bingeData'
 import { useEffect, useState } from 'react'
 import Confetti from 'react-confetti'
+import { EurovisionIcon } from './eurovision_logo'
 
 const useStyles = makeStyles(() => ({
   formControlLabel: {
@@ -56,7 +62,21 @@ const Bingo = () => {
       {selectedNumbers.length >= 20 && (
         <Confetti width={width} height={height} tweenDuration={200} />
       )}
+      <EurovisionIcon
+        style={{ width: 220, height: 70, cursor: 'pointer', marginTop: '30px' }}
+      />
 
+      <Typography
+        sx={{
+          marginTop: 0,
+          marginBottom: '30px',
+          fontSize: '16px',
+          textTransform: 'uppercase',
+          fontWeight: 800,
+        }}
+      >
+        Bingo 2023
+      </Typography>
       <FormGroup
         style={{
           display: 'flex',
