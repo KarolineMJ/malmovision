@@ -2,33 +2,25 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import ErrorPage from './ErrorPage'
+import {
+  Route,
+  RouterProvider,
+  createBrowserRouter,
+  createRoutesFromElements,
+} from 'react-router-dom'
 import Quiz from './Quiz'
 import Bingo from './Bingo'
 import FAQ from './FAQ'
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <App />,
-    errorElement: <ErrorPage />,
-    children: [
-      {
-        path: '/',
-        element: <Bingo />,
-      },
-      {
-        path: '/quiz',
-        element: <Quiz />,
-      },
-      {
-        path: '/faq',
-        element: <FAQ />,
-      },
-    ],
-  },
-])
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<App />}>
+      <Route index element={<Bingo />} />
+      <Route path="quiz" element={<Quiz />} />
+      <Route path="faq" element={<FAQ />} />
+    </Route>,
+  ),
+)
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
