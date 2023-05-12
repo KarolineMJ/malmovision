@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/malmovision/static/css/main.3a22456b.css",
+    "main.js": "/malmovision/static/js/main.79ba3016.js",
+    "static/js/787.a5578af3.chunk.js": "/malmovision/static/js/787.a5578af3.chunk.js",
+    "static/media/pexels-viktorya-sergeeva-🫂-10465028.jpg": "/malmovision/static/media/pexels-viktorya-sergeeva-🫂-10465028.5cb55768485850c7f45f.jpg",
+    "index.html": "/malmovision/index.html",
+    "main.3a22456b.css.map": "/malmovision/static/css/main.3a22456b.css.map",
+    "main.79ba3016.js.map": "/malmovision/static/js/main.79ba3016.js.map",
+    "787.a5578af3.chunk.js.map": "/malmovision/static/js/787.a5578af3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3a22456b.css",
+    "static/js/main.79ba3016.js"
+  ]
+}
