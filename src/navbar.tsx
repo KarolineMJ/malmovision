@@ -33,15 +33,15 @@ const Navbar = () => {
         <EurovisionIcon style={{ width: 120, height: 70, cursor: 'pointer' }} />
 
         <div>
-          <Link to="/bingo" className={classes.link}>
+          <Link to="/" className={classes.link}>
             Bingo
           </Link>
-          {/* <Link to="/quiz" className={classes.link}>
+          <Link to="/quiz" className={classes.link}>
             Quiz
           </Link>
           <Link to="/faq" className={classes.link}>
             FAQ
-          </Link> */}
+          </Link>
         </div>
       </Toolbar>
     </AppBar>
