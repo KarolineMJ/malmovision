@@ -5,7 +5,8 @@ import CircleUnchecked from '@material-ui/icons/RadioButtonUnchecked'
 
 import { getRandomItem } from './functions/getRandomNumbers'
 import { BingoText } from './data/bingeData'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import Confetti from 'react-confetti'
 
 const useStyles = makeStyles(() => ({
   formControlLabel: {
@@ -28,25 +29,34 @@ const Bingo = () => {
 
   function removeItem(index: number) {
     setSelectedNumbers(selectedNumbers.filter(number => number !== index))
+    window.localStorage.setItem(
+      SELECTED_NUMBERS,
+      JSON.stringify(selectedNumbers.filter(number => number !== index)),
+    )
   }
 
   function addItem(index: number) {
     setSelectedNumbers([...selectedNumbers, index])
+    window.localStorage.setItem(
+      SELECTED_NUMBERS,
+      JSON.stringify([...selectedNumbers, index]),
+    )
   }
 
   function handleOnChange(index: number) {
     const hasSelectedNumber = selectedNumbers.includes(index)
 
     hasSelectedNumber ? removeItem(index) : addItem(index)
-
-    window.localStorage.setItem(
-      SELECTED_NUMBERS,
-      JSON.stringify(selectedNumbers),
-    )
   }
+
+  const { width, height } = useWindowSize()
 
   return (
     <>
+      {selectedNumbers.length >= 20 && (
+        <Confetti width={width} height={height} tweenDuration={200} />
+      )}
+
       <FormGroup
         style={{
           display: 'flex',
@@ -112,3 +122,33 @@ const Bingo = () => {
 }
 
 export default Bingo
+
+// Hook
+function useWindowSize() {
+  // Initialize state with undefined width/height so server and client renders match
+  // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
+  const [windowSize, setWindowSize] = useState<{
+    width: number | undefined
+    height: number | undefined
+  }>({
+    width: undefined,
+    height: undefined,
+  })
+  useEffect(() => {
+    // Handler to call on window resize
+    function handleResize() {
+      // Set window width/height to state
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      })
+    }
+    // Add event listener
+    window.addEventListener('resize', handleResize)
+    // Call handler right away so state gets updated with initial window size
+    handleResize()
+    // Remove event listener on cleanup
+    return () => window.removeEventListener('resize', handleResize)
+  }, []) // Empty array ensures that effect is only run on mount
+  return windowSize
+}
