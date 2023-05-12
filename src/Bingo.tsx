@@ -1,21 +1,10 @@
-import {
-  Box,
-  Button,
-  Checkbox,
-  FormControl,
-  FormControlLabel,
-  FormGroup,
-  FormLabel,
-  Input,
-  Typography,
-} from '@mui/material'
+import { Checkbox, FormControlLabel, FormGroup } from '@mui/material'
 import { makeStyles } from '@material-ui/core'
 import CircleCheckedFilled from '@material-ui/icons/CheckCircle'
 import CircleUnchecked from '@material-ui/icons/RadioButtonUnchecked'
 
 import { getRandomItem } from './functions/getRandomNumbers'
 import { BingoText } from './data/bingeData'
-import { useEffect, useState } from 'react'
 
 const useStyles = makeStyles(() => ({
   formControlLabel: {
@@ -24,18 +13,6 @@ const useStyles = makeStyles(() => ({
 }))
 
 const Bingo = () => {
-  // const [values, setValues] = useState()
-  // //get state from localStorage to persist
-  // useEffect(() => {
-  //   const localValues = JSON.parse(localStorage.getItem('values') || '{}')
-  //   setValues(localValues)
-  // }, [])
-
-  // //save to localStorage
-  // useEffect(() => {
-  //   localStorage.setItem('values', JSON.stringify(values))
-  // }, [values])
-
   const classes = useStyles()
 
   const strings = getRandomItem({ arr: BingoText })
@@ -51,7 +28,7 @@ const Bingo = () => {
           margin: '20px',
         }}
       >
-        {strings.map((str, index) => {
+        {strings?.map((str, index) => {
           return (
             <FormControlLabel
               className={classes.formControlLabel}
