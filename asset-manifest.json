@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/malmovision/static/css/main.3a22456b.css",
-    "main.js": "/malmovision/static/js/main.89aad05e.js",
+    "main.css": "/malmovision/static/css/main.1895f328.css",
+    "main.js": "/malmovision/static/js/main.7bdbba1a.js",
     "static/js/787.a5578af3.chunk.js": "/malmovision/static/js/787.a5578af3.chunk.js",
-    "static/media/pexels-viktorya-sergeeva-🫂-10465028.jpg": "/malmovision/static/media/pexels-viktorya-sergeeva-🫂-10465028.5cb55768485850c7f45f.jpg",
+    "static/media/glitter.jpg": "/malmovision/static/media/glitter.5cb55768485850c7f45f.jpg",
     "index.html": "/malmovision/index.html",
-    "main.3a22456b.css.map": "/malmovision/static/css/main.3a22456b.css.map",
-    "main.89aad05e.js.map": "/malmovision/static/js/main.89aad05e.js.map",
+    "main.1895f328.css.map": "/malmovision/static/css/main.1895f328.css.map",
+    "main.7bdbba1a.js.map": "/malmovision/static/js/main.7bdbba1a.js.map",
     "787.a5578af3.chunk.js.map": "/malmovision/static/js/787.a5578af3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a22456b.css",
-    "static/js/main.89aad05e.js"
+    "static/css/main.1895f328.css",
+    "static/js/main.7bdbba1a.js"
   ]
 }
