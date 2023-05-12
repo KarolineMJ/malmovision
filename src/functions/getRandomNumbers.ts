@@ -14,7 +14,7 @@ export const getRandomNumbers = () => {
 }
 
 export const getRandomItem = ({ arr }: { arr: string[] }) => {
-  var storedNumbers: number[] = JSON.parse(localStorage.numbers)
+  var storedNumbers: number[] = JSON.parse(localStorage.numbers || [])
 
   let testArr = [] as string[]
   if (storedNumbers.length === guessNumber) {

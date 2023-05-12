@@ -113,9 +113,9 @@ export const EurovisionIcon = ({ ...props }: SvgIconProps) => {
       <g id="g10">
         <g id="g12">
           <g id="g190">
-            <g clip-path="url(#clippath)">
+            <g clipPath="url(#clippath)">
               <g id="g192">
-                <g clip-path="url(#clippath-1)">
+                <g clipPath="url(#clippath-1)">
                   <g id="g198">
                     <path
                       id="path204"
@@ -127,9 +127,9 @@ export const EurovisionIcon = ({ ...props }: SvgIconProps) => {
             </g>
           </g>
           <g id="g270">
-            <g clip-path="url(#clippath-2)">
+            <g clipPath="url(#clippath-2)">
               <g id="g272">
-                <g clip-path="url(#clippath-3)">
+                <g clipPath="url(#clippath-3)">
                   <g id="g278">
                     <path
                       id="path284"
@@ -141,9 +141,9 @@ export const EurovisionIcon = ({ ...props }: SvgIconProps) => {
             </g>
           </g>
           <g id="g286">
-            <g clip-path="url(#clippath-4)">
+            <g clipPath="url(#clippath-4)">
               <g id="g288">
-                <g clip-path="url(#clippath-5)">
+                <g clipPath="url(#clippath-5)">
                   <g id="g294">
                     <path
                       id="path300"
@@ -155,9 +155,9 @@ export const EurovisionIcon = ({ ...props }: SvgIconProps) => {
             </g>
           </g>
           <g id="g302">
-            <g clip-path="url(#clippath-6)">
+            <g clipPath="url(#clippath-6)">
               <g id="g304">
-                <g clip-path="url(#clippath-7)">
+                <g clipPath="url(#clippath-7)">
                   <g id="g310">
                     <path
                       id="path316"
@@ -169,9 +169,9 @@ export const EurovisionIcon = ({ ...props }: SvgIconProps) => {
             </g>
           </g>
           <g id="g318">
-            <g clip-path="url(#clippath-8)">
+            <g clipPath="url(#clippath-8)">
               <g id="g320">
-                <g clip-path="url(#clippath-9)">
+                <g clipPath="url(#clippath-9)">
                   <g id="g326">
                     <path
                       id="path332"
@@ -183,9 +183,9 @@ export const EurovisionIcon = ({ ...props }: SvgIconProps) => {
             </g>
           </g>
           <g id="g334">
-            <g clip-path="url(#clippath-10)">
+            <g clipPath="url(#clippath-10)">
               <g id="g336">
-                <g clip-path="url(#clippath-11)">
+                <g clipPath="url(#clippath-11)">
                   <g id="g342">
                     <path
                       id="path348"
@@ -197,9 +197,9 @@ export const EurovisionIcon = ({ ...props }: SvgIconProps) => {
             </g>
           </g>
           <g id="g350">
-            <g clip-path="url(#clippath-12)">
+            <g clipPath="url(#clippath-12)">
               <g id="g352">
-                <g clip-path="url(#clippath-13)">
+                <g clipPath="url(#clippath-13)">
                   <g id="g358">
                     <path
                       id="path364"

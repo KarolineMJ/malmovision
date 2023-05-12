@@ -31,6 +31,7 @@ const Bingo = () => {
         {strings?.map((str, index) => {
           return (
             <FormControlLabel
+              key={index}
               className={classes.formControlLabel}
               style={{
                 display: 'flex',
@@ -65,20 +66,12 @@ const Bingo = () => {
                       fontSize: '14px',
                     },
                     display: 'none',
-
-                    // position: 'absolute',
-                    // top: '-15px',
-                    // right: '-15px',
                   }}
                   checkedIcon={<CircleCheckedFilled />}
                 />
               }
               label={str}
             />
-
-            //     {str}
-            //   </FormLabel>
-            // </FormControlLabel>
           )
         })}
       </FormGroup>
