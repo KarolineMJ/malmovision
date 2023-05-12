@@ -2,11 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
-import {
-  BrowserRouter,
-  RouterProvider,
-  createBrowserRouter,
-} from 'react-router-dom'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import ErrorPage from './ErrorPage'
 import Quiz from './Quiz'
 import Bingo from './Bingo'
